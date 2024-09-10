@@ -1,0 +1,203 @@
+
+:root{
+    --color: #FFC3A1;
+    --color-tr: #FFC3A1aa;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 10%;
+}
+
+nav a{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.category {
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    border-radius: 10px;
+    margin: 50px auto 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 5px 15px;
+    text-align: center;
+    color: white;
+}
+
+.main {
+    background-color: white;
+    margin: -15px auto 80px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #808080;
+    max-width: 800px;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    margin: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.separator{
+    height: 1px;
+    width: 50%;
+    background-color: lightgray;
+    margin: auto;
+}
+
+.descr {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+div.general {
+    max-width: 500px;
+    min-width: 200px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+table.general {
+    background-color: var(--color-tr);
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    height: fit-content;
+}
+
+th.general {
+    padding: 10px 10px 5px 10px;
+    height: fit-content;
+}
+
+td.general {
+    padding: 2px 10px 10px 10px;
+    height: fit-content;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 6%;
+    margin-top: 20px;
+}
+
+.content-data {
+    width: 47%;
+}
+
+h2{
+    border-bottom: 3px solid var(--color);
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ingredients p {
+    border: 1px solid lightgray;
+    margin: 5px 0;
+    padding: 5px 0;
+    text-align: center;
+    list-style-type: none;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+table.preparation td{
+    vertical-align: top;
+}
+
+table.preparation tr{
+    height: 40px;
+}
+
+.numero {
+    background-color: var(--color);
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.etape {
+    font-size: 18px;
+    padding: 0 0 10px 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        padding: 0;
+    }
+    .category{
+        margin-top: 20px;
+    }
+    .main{
+        margin: -15px 2% 30px 2%;
+        padding: 10px;
+    }
+    table.general{
+        padding: 0;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2, .category{
+        font-size: 16px;
+    }
+    .numero, th, td, .etape, .ingredients p, .descr {
+        font-size: 14px;
+    }
+    th.general{
+        padding: 3px 5px 0 5px;
+    }
+    td.general{
+        padding: 0 5px 3px 0;
+    }
+    .content{
+        display: block;
+    }
+    .content-data{
+        width: 100%;
+        margin-top: 30px;
+    }
+    nav a {
+        width: 40px;
+        height: 40px;
+    }
+}
